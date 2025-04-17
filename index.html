@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./image/favicon.svg">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+<body class="tracking-wider">
+    <nav class="z-20 fixed top-0 left-0 w-auto h-auto sm:pt-5 pl-5 sm:pl-[60px] md:pl-[100px]">
+        <button id="zr-switch-lang" class="inline-flex justify-between items-center gap-3 bg-white cursor-pointer sm:min-w-[100px] py-2 px-5 border rounded-4xl">
+            <img id="zr-flag-my" class="max-w-[20px] max-h-[25px] w-full h-full object-cover rounded-[2px]" src="./image/my.jpg" alt=""/>
+            <img id="zr-flag-en" class="max-w-[20px] max-h-[25px] w-full h-full object-cover rounded-[2px]" src="./image/en.jpg" alt=""/>
+            <span class="hidden sm:block" data-translate="lang">English</span>
+        </button>
+    </nav>
+    <div class="">
+        <div class="sm:z-[10] fixed max-w-[100px] md:max-w-[150px] max-h-[100px] md:max-h-[150px] rotate-[25deg] -bottom-5 -left-5">
+            <img class="w-full h-full object-contain" src="./image/frog2.webp" />
+        </div>
+        <div class="sm:z-[10] fixed max-w-[100px] md:max-w-[150px] max-h-[100px] md:max-h-[150px] -rotate-[25deg] -bottom-5 -right-5">
+            <label class="py-2 px-5 text-xl font-semibold rounded-[50%] bg-white border-2 border-[#060507] absolute -top-[60px] left-1/2 -translate-x-1/2 zr-hi" data-translate="hi">Hi</label>
+            <img class="w-full h-full object-contain" src="./image/frog.webp" />
+        </div>
+
+        <div class="z-10 fixed right-0 top-0 sm:top-1/2 sm:-translate-y-1/2 p-2 rounded-tl-[4px] rounded-bl-[4px] bg-white zr-menubar">
+            <ul class="flex sm:flex-col gap-3">
+                <li>
+                    <a title="Home" href="#intro">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z"></path></svg>
+                    </a>
+                </li>
+                <li>
+                    <a title="About" href="#about">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path></svg>
+                    </a>
+                </li>
+                <li>
+                    <a title="Skills" href="#skills">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M6.012 18H21V4c0-1.103-.897-2-2-2H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3h15v-2H6.012C5.55 19.988 5 19.806 5 19c0-.101.009-.191.024-.273.112-.576.584-.717.988-.727zM8.648 7.642a2.224 2.224 0 0 1 3.125 0l.224.219.223-.219a2.225 2.225 0 0 1 3.126 0 2.129 2.129 0 0 1 0 3.069L11.998 14l-3.349-3.289a2.128 2.128 0 0 1-.001-3.069z"></path></svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a title="Experience" href="#work">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20 6h-3V4c0-1.103-.897-2-2-2H9c-1.103 0-2 .897-2 2v2H4c-1.103 0-2 .897-2 2v3h20V8c0-1.103-.897-2-2-2zM9 4h6v2H9V4zm5 10h-4v-2H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-8v2z"></path></svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a title="Contact" href="#contact">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M21 2H6a2 2 0 0 0-2 2v3H2v2h2v2H2v2h2v2H2v2h2v3a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm-8 2.999c1.648 0 3 1.351 3 3A3.012 3.012 0 0 1 13 11c-1.647 0-3-1.353-3-3.001 0-1.649 1.353-3 3-3zM19 18H7v-.75c0-2.219 2.705-4.5 6-4.5s6 2.281 6 4.5V18z"></path></svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <section id="intro" class="relative overflow-hidden min-h-screen flex flex-col justify-center">
+            <div class="zr-container my-[150px] z-[1] relative">
+                <div class="text-center max-w-[700px] mx-auto">
+                    <h1 class="text-[30px] md:text-[36px] lg:text-[40px] font-semibold" data-translate="name">I am Hnin Thu Zar.</h1>
+                    <h3 class="mt-5 text-[22px] md:text-[24px] lg:text-[28px] font-medium">Senior Developer</h3>
+                    <div class="mt-10 flex justify-center gap-6 zr-btns">
+                        <a href="#about" class="relative rounded-full border border-[#060507] inline-flex items-center justify-center px-6 py-2">
+                            <span data-translate="about_me">About Me</span>
+                            <img class="absolute bottom-[calc(100%-20px)] right-[calc(100%-20px)] w-10 h-10 object-contain" src="./image/frog3.webp" alt="" />
+                        </a>
+                        <a href="#work" class="relative rounded-full border border-[#060507] inline-flex items-center justify-center px-6 py-2">
+                            <span data-translate="my_work">My Work</span>
+                            <img class="absolute bottom-[calc(100%-20px)] left-[calc(100%-20px)] w-10 h-10 object-contain" src="./image/frog4.webp" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>            
+            <img class="-z-[1] fixed bottom-0 left-0 w-full h-[90%] object-cover" src="./image/wave.png" alt=""/>
+        </section>
+
+        <section id="about" class="relative min-h-screen flex flex-col justify-center">
+            <div class="zr-container my-[150px] z-[1] relative">
+                <div class="max-w-[700px] mx-auto ">
+                    <h2 class="mb-10 flex items-center gap-4 text-[22px] md:text-[26px] lg:text-[30px] font-semibold">
+                        <img class="mb-2 min-w-[40px] max-w-[40px]" src="./image/frog3.webp" alt=""/>
+                        <span class="block" data-translate="about_me">About Me</span>
+                    </h2>
+                
+                    <div class="zr-description" data-translate="about_description">
+                        I'm Zara — a senior front-end developer with a design-minded approach to building elegant, intuitive web interfaces.
+                        <br><br>
+                        With a strong foundation in JavaScript, modern frameworks, and responsive design, I specialize in crafting user experiences that are not only performant and accessible, but also visually polished and delightful to interact with.
+                        <br><br>
+                        I love bridging the gap between design and development — translating pixels into clean, scalable code and bringing life to UI through thoughtful interactions. Whether it's architecting a complex frontend system or fine-tuning microinteractions, I’m all about making the web feel beautiful and seamless.
+                    </div> 
+                    
+                    <div class="mt-10">
+                        <a href="./Sample Resume.pdf" class="group font-semibold transition-all duration-300 hover:text-[#6eb84b]">
+                            <span data-translate="view_resume">View Resume </span><span class="inline-block transition-all duration-300 group-hover:translate-x-[5px]"> -></span>
+                        </a>
+                    </div>
+                </div>             
+            </div>
+        </section>
+
+        <section id="skills" class="relative min-h-screen flex flex-col justify-center">
+            <div class="zr-container my-[150px] z-[1] relative">
+                <div class="max-w-[700px] mx-auto">
+                    <h2 class="mb-10 flex items-center gap-4 text-[22px] md:text-[26px] lg:text-[30px] font-semibold">
+                        <img class="mb-2 min-w-[40px] max-w-[40px]" src="./image/frog2.webp" alt=""/>
+                        <span class="block" data-translate="skills">Skills</span>
+                    </h2>
+                
+                    <div class="zr-description" data-translate="skill_description">
+                        These skill levels represent my current progress, but I'm always pushing to grow and achieve more.
+                    </div>
+
+                    <div class="mt-10 zr-skill-progress">
+                        <div class="mb-5 last:mb-0">
+                            <div class="flex justify-between gap-5">
+                                <label>CSS/SASS/Tailwind CSS</label>
+                                <label>95%</label>
+                            </div>
+                            <div class="relative w-full h-[5px] rounded-2xl bg-white">
+                                <div class="absolute top-0 left-0 w-[95%] h-[5px] bg-[#6eb84b] rounded-2xl"></div>
+                            </div>
+                        </div>
+                        <div class="mb-5 last:mb-0">
+                            <div class="flex justify-between gap-5">
+                                <label>JavaScript/Typescript</label>
+                                <label>90%</label>
+                            </div>
+                            <div class="relative w-full h-[5px] rounded-2xl bg-white">
+                                <div class="absolute top-0 left-0 w-[90%] h-[5px] bg-[#6eb84b] rounded-2xl"></div>
+                            </div>
+                        </div>
+                        <div class="mb-5 last:mb-0">
+                            <div class="flex justify-between gap-5">
+                                <label>Gulp/Grunt</label>
+                                <label>85%</label>
+                            </div>
+                            <div class="relative w-full h-[5px] rounded-2xl bg-white">
+                                <div class="absolute top-0 left-0 w-[85%] h-[5px] bg-[#6eb84b] rounded-2xl"></div>
+                            </div>
+                        </div>
+                        <div class="mb-5 last:mb-0">
+                            <div class="flex justify-between gap-5">
+                                <label>Wordpress - ACF</label>
+                                <label>85%</label>
+                            </div>
+                            <div class="relative w-full h-[5px] rounded-2xl bg-white">
+                                <div class="absolute top-0 left-0 w-[85%] h-[5px] bg-[#6eb84b] rounded-2xl"></div>
+                            </div>
+                        </div>
+                        <div class="mb-5 last:mb-0">
+                            <div class="flex justify-between gap-5">
+                                <label>Angular Js/ Angular</label>
+                                <label>85%</label>
+                            </div>
+                            <div class="relative w-full h-[5px] rounded-2xl bg-white">
+                                <div class="absolute top-0 left-0 w-[85%] h-[5px] bg-[#6eb84b] rounded-2xl"></div>
+                            </div>
+                        </div>
+                        <div class="mb-5 last:mb-0">
+                            <div class="flex justify-between gap-5">
+                                <label>React Js/ Next Js</label>
+                                <label>90%</label>
+                            </div>
+                            <div class="relative w-full h-[5px] rounded-2xl bg-white">
+                                <div class="absolute top-0 left-0 w-[90%] h-[5px] bg-[#6eb84b] rounded-2xl"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="work" class="relative min-h-screen flex flex-col justify-center">
+            <div class="zr-container my-[150px] z-[1] relative">
+                <div class="max-w-[700px] mx-auto">
+                    <h2 class="mb-10 flex items-center gap-4 text-[22px] md:text-[26px] lg:text-[30px] font-semibold">
+                        <img class="mb-2 min-w-[40px] max-w-[40px]" src="./image/frog4.webp" alt=""/>
+                        <span class="block" data-translate="my_work">Works</span>
+                    </h2>
+                    <div class="zr-description" data-translate="exp_description">
+                        I have nearly 6 years of working experience in both solo and collaborative projects, applying my skills to real-world challenges. Each project has contributed to my professional growth, sharpened my problem-solving abilities, and boosted my confidence as a developer.
+                    </div>
+
+                    <div class="mt-10 zr-experience">
+                        <div class="mb-10 last:mb-0 p-6 relative zr-exp-item">
+                            <h5 class="mb-2 text-[16px] font-medium">Visible One - MY</h5>
+                            <p class="mb-3">
+                                Senior Web Developer
+                            </p>
+                            <p class="text-sm">Feb 2022 - Present</p>
+
+                            <img class="" src="image/company1.png" alt="" />
+                        </div>
+
+                        <div class="mb-10 last:mb-0 p-6 relative zr-exp-item">
+                            <h5 class="mb-2 text-[16px] font-medium">Abank</h5>
+                            <p class="mb-3">
+                                Senior Web Developer
+                            </p>
+                            <p class="text-sm">Jan 2023 - Jun 2024</p>
+
+                            <img class="" src="image/company2.png" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="mt-10">
+                        <a href="https://hninthuzar.github.io/learning-and-sharing-document-public/" class="group font-semibold transition-all duration-300 hover:text-[#6eb84b]">
+                            <span data-translate="view_projects">View All Projects</span> <span class="inline-block transition-all duration-300 group-hover:translate-x-[5px]">-></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="relative min-h-screen flex flex-col justify-center">
+            <div class="zr-container my-[150px] z-[1] relative">
+                <div class="max-w-[700px] mx-auto">
+                    <h2 class="mb-10 flex items-center gap-4 text-[22px] md:text-[26px] lg:text-[30px] font-semibold">
+                        <img class="mb-2 min-w-[40px] max-w-[40px]" src="./image/frog.webp" alt=""/>
+                        <span class="block" data-translate="contact">Contact</span>
+                    </h2>
+                    <div class="zr-description" data-translate="contact_description">
+                        Get in touch with me for more information.
+                        If you need help or have question, I'm here for u.
+                    </div>
+
+                    <div class="mt-10 flex flex-col md:flex-row gap-10 zr-moreinfo">
+                        <div class="w-full md:w-1/2">
+                            <div class="mb-3">
+                                <a href="tel:+60 102345678" class="overflow-hidden overflow-ellipsis line-clamp-1 w-full inline-flex items-center gap-3 sm:gap-5">
+                                    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #0972E4;"><path d="m20.487 17.14-4.065-3.696a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.085-1.39z"></path></svg>
+                                    <label>+60 102345678</label>
+                                </a>
+                            </div>
+
+                            <div class="mb-3">
+                                <a href="mailto:hninthuzar.itworld@gmail.com" class="overflow-hidden overflow-ellipsis line-clamp-1 w-full inline-flex items-center gap-3 sm:gap-5">
+                                    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #0972E4;"><path d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"></path><path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path></svg>
+                                    <label>hninthuzar.itworld@gmail.com</label>
+                                </a>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <a href="https://maps.app.goo.gl/tBN11BZSi3zAAiA16" class="overflow-hidden overflow-ellipsis line-clamp-1 w-full inline-flex items-center gap-3 sm:gap-5">
+                                    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #0972E4;"><path d="M2.002 9.538c-.023.411.207.794.581.966l7.504 3.442 3.442 7.503c.164.356.52.583.909.583l.057-.002a1 1 0 0 0 .894-.686l5.595-17.032c.117-.358.023-.753-.243-1.02s-.66-.358-1.02-.243L2.688 8.645a.997.997 0 0 0-.686.893z"></path></svg>
+                                    <label>Kuala Lumpur, Malaysia</label>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <div class="mb-3">
+                                <a href="tel:+60 102345678" class="overflow-hidden overflow-ellipsis line-clamp-1 w-full inline-flex items-center gap-3 sm:gap-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 3C18.7956 3 19.5587 3.31607 20.1213 3.87868C20.6839 4.44129 21 5.20435 21 6V18C21 18.7956 20.6839 19.5587 20.1213 20.1213C19.5587 20.6839 18.7956 21 18 21H6C5.20435 21 4.44129 20.6839 3.87868 20.1213C3.31607 19.5587 3 18.7956 3 18V6C3 5.20435 3.31607 4.44129 3.87868 3.87868C4.44129 3.31607 5.20435 3 6 3H18ZM8 10C7.73478 10 7.48043 10.1054 7.29289 10.2929C7.10536 10.4804 7 10.7348 7 11V16C7 16.2652 7.10536 16.5196 7.29289 16.7071C7.48043 16.8946 7.73478 17 8 17C8.26522 17 8.51957 16.8946 8.70711 16.7071C8.89464 16.5196 9 16.2652 9 16V11C9 10.7348 8.89464 10.4804 8.70711 10.2929C8.51957 10.1054 8.26522 10 8 10ZM11 9C10.7348 9 10.4804 9.10536 10.2929 9.29289C10.1054 9.48043 10 9.73478 10 10V16C10 16.2652 10.1054 16.5196 10.2929 16.7071C10.4804 16.8946 10.7348 17 11 17C11.2652 17 11.5196 16.8946 11.7071 16.7071C11.8946 16.5196 12 16.2652 12 16V12.34C12.305 11.996 12.82 11.592 13.393 11.347C13.726 11.205 14.227 11.147 14.575 11.257C14.6904 11.2863 14.7933 11.3523 14.868 11.445C14.92 11.515 15 11.671 15 12V16C15 16.2652 15.1054 16.5196 15.2929 16.7071C15.4804 16.8946 15.7348 17 16 17C16.2652 17 16.5196 16.8946 16.7071 16.7071C16.8946 16.5196 17 16.2652 17 16V12C17 11.33 16.83 10.734 16.476 10.256C16.1503 9.82256 15.6944 9.50472 15.175 9.349C14.273 9.066 13.274 9.223 12.607 9.509C12.3935 9.60084 12.1854 9.70502 11.984 9.821C11.9421 9.59059 11.8206 9.3822 11.6408 9.23216C11.461 9.08213 11.2342 8.99996 11 9ZM8 7C7.73478 7 7.48043 7.10536 7.29289 7.29289C7.10536 7.48043 7 7.73478 7 8C7 8.26522 7.10536 8.51957 7.29289 8.70711C7.48043 8.89464 7.73478 9 8 9C8.26522 9 8.51957 8.89464 8.70711 8.70711C8.89464 8.51957 9 8.26522 9 8C9 7.73478 8.89464 7.48043 8.70711 7.29289C8.51957 7.10536 8.26522 7 8 7Z" fill="#212121"></path>
+                                    </svg>
+                                    <label>LinkedIn</label>
+                                </a>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <a href="mailto:hninthuzar.itworld@gmail.com" class="overflow-hidden overflow-ellipsis line-clamp-1 w-full inline-flex items-center gap-3 sm:gap-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 2C10.6868 2 9.38642 2.25866 8.17317 2.7612C6.95991 3.26375 5.85752 4.00035 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21V19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C18 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26V21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2Z" fill="#212121"></path>
+                                    </svg>
+                                    <label>Github</label>
+                                </a>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <a href="https://maps.app.goo.gl/tBN11BZSi3zAAiA16" class="overflow-hidden overflow-ellipsis line-clamp-1 w-full inline-flex items-center gap-3 sm:gap-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z" fill="#212121"></path>
+                                    </svg>
+                                    <label>Instagram</label>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="relative zr-container pb-10">
+            <div id="BackToTop" class="relative cursor-pointer mx-auto max-w-[40px] max-h-[40px] ">
+                <svg class="w-[10px] h-[10px] object-contain absolute top-0 left-1/2 -translate-x-1/2 zr-heart-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #e0064c;"><path d="M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z"></path></svg>
+                <img class="w-full h-full object-contain" src="./image/frog3.webp" />
+            </div>
+            <p class="mt-6 text-center opacity-80">Copyright © 2024</p>
+        </footer>
+
+    </main>
+    <script type="module" src="scripts.js"></script>
+</body>
+</html>
