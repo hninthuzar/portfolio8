@@ -2,7 +2,9 @@
 <br><br>
 "I'm sharing this embedded source code publicly. You can freely use it for your own website or others, and customize it by changing colors, font families, or any other styles through overwriting. If you're unable to change the color of an icon image, consider using SVG icon code instead. For convenience, I've included a free icon resource: https://boxicons.com."
 <br><br>
-"If you want to purchase the original source code for debugging or customization, it's available for `70,000 MMK to 100,000 MMK.`"
+"You can access the original source code for learning or customization through the following link:"
+<br>
+(https://github.com/hninthuzar/all-portfolios)
 
 ```
 View More Portfolios
